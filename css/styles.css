@@ -1,0 +1,58 @@
+/* =========================================
+   ESTILOS GENERALES
+   ========================================= */
+body {
+  /* Le damos un color de fondo gris/azulado muy suave en lugar de blanco puro */
+  background-color: #f4f7f6; 
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* =========================================
+   MENÚ SUPERIOR (NAVBAR)
+   ========================================= */
+/* Sobrescribimos el color claro de Bootstrap por un azul oscuro elegante */
+.navbar {
+  background-color: #2c3e50 !important; 
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.navbar-brand, .nav-link {
+  color: #ecf0f1 !important; /* Texto en color blanco/hielo */
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover, .nav-link.active {
+  color: #3498db !important; /* Se pone azul claro al pasar el mouse */
+  font-weight: bold;
+}
+
+/* =========================================
+   TÍTULOS DE SECCIONES
+   ========================================= */
+h2.border-bottom {
+  color: #2c3e50;
+  border-bottom: 3px solid #3498db !important; /* Línea de color debajo del título */
+  display: inline-block; /* Hace que la línea abarque solo el texto */
+}
+
+/* =========================================
+   EFECTOS EN LAS TARJETAS (HABILIDADES)
+   ========================================= */
+.card {
+  border: none;
+  border-radius: 10px;
+  /* Esta transición hace que el movimiento sea suave */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+/* Efecto: Al pasar el mouse, la tarjeta "flota" hacia arriba */
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 25px rgba(0,0,0,0.2) !important;
+}
+
+/* Bordes redondeados también en los encabezados de las tarjetas */
+.card-header {
+  border-top-left-radius: 10px !important;
+  border-top-right-radius: 10px !important;
+}
